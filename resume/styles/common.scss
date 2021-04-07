@@ -78,6 +78,11 @@ p {
   margin: 0;
 }
 
+.box-cover {
+  max-width: 1500px;
+  height: 100%;
+}
+
 .header {
   display: block;
   background: $primaryColor;
