@@ -1,0 +1,44 @@
+@import "./common.scss";
+
+.banner-container {
+  background-image: url("../images/hero2.webp");
+}
+
+.main-container {
+  .box-container {
+    .box-wrapper {
+      gap: 30px;
+
+      .box-col-5 {
+        width: calc(50% - 30px);
+      }
+
+      .box-content {
+        padding: 0px;
+        position: relative;
+
+        .box-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0.288),
+            rgba(0, 0, 0, 0.411)
+          );
+          border-radius: 10px;
+          color: $white;
+
+          .overlay-content{
+              position: absolute;
+              bottom: 20px;
+              right: 0;
+              left: 0;
+              text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -548,291 +548,112 @@ footer .footer-wrapper .footer-bottom {
 }
 
 /*End Footer*/
-.main-container .box-container {
-  /*Khung About me*/
-  /*End*/
-  /*Khung Progress Bar*/
-  /*End*/
-  /*Khung Lastest News*/
-  /*End*/
-}
-
-.main-container .box-container.rect-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 100px;
-}
-
-.main-container .box-container.rect-area .box-content {
-  padding: 0;
-  z-index: 2;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 30px 0px 30px 0px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col {
-  position: relative;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col:first-child {
-  width: 50px;
-  height: 50px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col:last-child {
-  width: calc(100% - 50px);
-  padding: 0px 0px 0px 10px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .box-flat-icon {
-  background-color: #ff8553;
-  border-radius: 50%;
-  color: white;
-  padding: 12px;
-  font-size: 24px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .date,
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .award,
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .position,
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .text {
-  margin-bottom: 10px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .date {
-  color: #ff8553;
-  font-size: 18px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .date,
-.main-container .box-container .box-wrapper .box-content .box-rect .box-col .position {
-  font-weight: bold;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box {
+.main-container .container-wrapper .box-container {
   display: block;
 }
 
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-title {
-  margin: 10px 0px 10px 0px;
+.main-container .container-wrapper .box-container .box-wrapper {
+  gap: 20px;
 }
 
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar {
-  margin: 20px 0px 20px 0px;
+.main-container .box-col-7 {
+  width: calc(70% - 20px);
 }
 
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-title {
+@media (max-width: 1000px) {
+  .main-container .box-col-7 {
+    width: 100%;
+  }
+}
+
+.main-container .box-col-3 {
+  width: calc(30% - 20px);
+}
+
+@media (max-width: 1000px) {
+  .main-container .box-col-3 {
+    width: 100%;
+  }
+}
+
+.main-container .message-form {
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+}
+
+.main-container .message-form .message {
+  width: 100%;
+  height: 250px;
+  padding: 25px;
+  border: 1px solid #e5e6e9;
+  font-size: 13px;
+}
+
+.main-container .message-form .message-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
+  height: 50px;
+  margin-top: 20px;
 }
 
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-title span:last-child {
-  margin-left: auto;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar {
-  height: 5px;
+.main-container .message-form .message-row .name,
+.main-container .message-form .message-row .email,
+.main-container .message-form .message-row .subject {
   width: 100%;
-  position: relative;
-  background-color: #ffe7de;
-  border-radius: 80px;
+  height: 100%;
+  border: 1px solid #e5e6e9;
+  padding: 0px 20px 0px 20px;
+  font-size: 13px;
 }
 
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
+.main-container .message-form .message-row .send-button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #FF9063;
+  color: #FF9063;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.main-container .message-form .message-row .send-button:hover {
   background-color: #ff8553;
-  border-radius: 80px;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.html {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.css {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.c-sharp {
-  right: 8%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.javascript {
-  right: 22%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.sql {
-  right: 22%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.git {
-  right: 22%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.data-structure {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.algorithm {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.angular {
-  right: 28%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.jquery {
-  right: 28%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.bootstrap {
-  right: 22%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.english {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.team-work {
-  right: 14%;
-}
-
-.main-container .box-container .box-wrapper .box-content .box-rect .progress-box .progress-bar .progress-holder.time-management {
-  right: 14%;
-}
-
-.main-container .box-container .box-navigator {
-  padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.main-container .box-container .box-navigator .navigator {
-  margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .main-container .box-container .box-navigator .navigator {
-    padding-top: 40px;
-    width: 100%;
-  }
-}
-
-.main-container .box-container .box-navigator .navigator .prev,
-.main-container .box-container .box-navigator .navigator .next {
-  background-color: white;
-  padding: 12px 15px;
-  border-radius: 50%;
-  color: #ff8553;
-  font-size: 17px;
-  border: none;
-  -webkit-box-shadow: 0 10px 20px #ff845331, 0 3px 6px #ff845321;
-          box-shadow: 0 10px 20px #ff845331, 0 3px 6px #ff845321;
-}
-
-.main-container .box-container .box-navigator .navigator .prev:hover,
-.main-container .box-container .box-navigator .navigator .next:hover {
-  background: #ff8553;
   color: white;
 }
 
-.main-container .box-container .box-navigator .navigator .prev {
-  margin-right: 5px;
+.main-container .info-group {
+  width: 100%;
+  padding: 30px;
 }
 
-/*Khung tin tức*/
-.news-slide-container {
+@media (max-width: 1000px) {
+  .main-container .info-group {
+    padding: 30px 0px 0px 0px;
+  }
+}
+
+.main-container .info-group .info-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b9bbbe;
+  margin-bottom: 30px;
 }
 
-.news-slide-container .box-col-5:first-child {
-  padding-right: 20px;
+.main-container .info-group .info-row .info-icon {
+  font-size: 50px;
 }
 
-.news-slide-container .box-col-5:last-child {
-  padding-left: 20px;
+.main-container .info-group .info-row .info-content {
+  display: block;
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .news-slide-container .box-col-5 {
-    width: 100%;
-  }
-  .news-slide-container .box-col-5 {
-    margin-bottom: 30px;
-  }
-  .news-slide-container .box-col-5:first-child {
-    padding-right: 0px;
-  }
-  .news-slide-container .box-col-5:last-child {
-    padding-left: 0px;
-  }
-}
-
-.news-slide-container .news-image-box {
-  height: 400px;
+.main-container .info-group .info-row .info-content .info-txt {
   width: 100%;
-  position: relative;
 }
-
-@media (max-width: 1200px) {
-  .news-slide-container .news-image-box {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 512px) {
-  .news-slide-container .news-image-box {
-    height: 300px;
-  }
-}
-
-.news-slide-container .news-image-box::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 50%;
-  bottom: 0;
-  background-image: -webkit-linear-gradient(90deg, #010a27 0%, #010a27 0%, rgba(6, 31, 120, 0.3) 70%, rgba(11, 52, 201, 0.01) 100%, #0b34c9 100%);
-  border-radius: 10px;
-}
-
-.news-slide-container .news-image-box .news-info {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  right: 10px;
-  color: white;
-}
-
-.news-slide-container .news-image-box .news-info .time,
-.news-slide-container .news-image-box .news-info .authur,
-.news-slide-container .news-image-box .news-info .news-name {
-  padding: 5px;
-}
-
-.news-slide-container .news-image-box .news-info .time:hover,
-.news-slide-container .news-image-box .news-info .authur:hover,
-.news-slide-container .news-image-box .news-info .news-name:hover {
-  text-decoration: underline;
-}
-
-/*End Khung tin tức*/
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=contact.css.map */
