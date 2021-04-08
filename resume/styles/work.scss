@@ -1,6 +1,7 @@
 @import "./common.scss";
 
 .banner-container {
+  justify-content: center;
   background-image: url("../images/hero2.webp");
 }
 
@@ -11,6 +12,10 @@
 
       .box-col-5 {
         width: calc(50% - 30px);
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
 
       .box-content {

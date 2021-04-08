@@ -36,8 +36,22 @@
   }
 }
 
-h3 {
-  font-size: 28px;
+@media (min-width: 769px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  h3 {
+    font-size: 20px;
+  }
 }
 
 .img {
@@ -274,6 +288,7 @@ body {
 .main-container .box-container .box-wrapper .box-txt {
   display: block;
   width: 100%;
+  word-break: break-word;
 }
 
 .main-container .box-container .box-wrapper .box-title,
@@ -483,6 +498,9 @@ footer .footer-wrapper .footer-top .footer-content .box-col-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -514,12 +532,12 @@ footer .footer-wrapper .footer-top .footer-content .box-col-5:last-child .contac
   color: white;
   background: transparent;
   font-size: 17px;
+  margin: 20px 0px 0px 0px;
 }
 
 footer .footer-wrapper .footer-top .footer-content .box-col-5:last-child .contact-button {
   background-color: #ff8553;
   border: 1px solid #ff8553;
-  margin-left: 10px;
 }
 
 footer .footer-wrapper .footer-top .footer-social-group {
@@ -549,6 +567,9 @@ footer .footer-wrapper .footer-bottom {
 
 /*End Footer*/
 .banner-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/hero2.webp");
 }
 
@@ -558,6 +579,12 @@ footer .footer-wrapper .footer-bottom {
 
 .main-container .box-container .box-wrapper .box-col-5 {
   width: calc(50% - 30px);
+}
+
+@media (max-width: 768px) {
+  .main-container .box-container .box-wrapper .box-col-5 {
+    width: 100%;
+  }
 }
 
 .main-container .box-container .box-wrapper .box-content {

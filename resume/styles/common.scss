@@ -114,6 +114,7 @@ body {
       .box-txt {
         display: block;
         width: 100%;
+        word-break: break-word;
       }
 
       .box-title,
@@ -294,6 +295,8 @@ footer {
 
         .box-col-5 {
           display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
 
           @media (max-width: 768px) {
             width: 100%;
@@ -315,12 +318,12 @@ footer {
               color: $white;
               background: transparent;
               font-size: 17px;
+              margin: 20px 0px 0px 0px;
             }
 
             .contact-button {
               background-color: #ff8553;
               border: 1px solid #ff8553;
-              margin-left: 10px;
             }
           }
         }

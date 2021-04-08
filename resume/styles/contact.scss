@@ -1,71 +1,70 @@
 @import "./common.scss";
 
+.banner-container {
+  justify-content: center;
+  background-image: url("../images/hero2.webp");
+}
+
 .main-container {
   .container-wrapper {
+    display: flex;
+    justify-content: center;
+
     .box-container {
+      max-width: 100%;
       display: block;
+      padding-bottom: 40px;
 
       .box-wrapper {
-        gap: 20px;
+        gap: 40px;
       }
     }
   }
 
-  .box-col-7 {
-    width: calc(70% - 20px);
+  .message-container {
+    display: block;
+    width: 1500px;
 
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
-  }
+    .message-form {
+      min-width: 100%;
+      padding: 20px 0px 0px 0px;
 
-  .box-col-3 {
-    //background: black;
-    width: calc(30% - 20px);
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
-  }
-
-  .message-form {
-    width: 100%;
-    padding: 20px 0px 0px 0px;
-
-    .message {
-      width: 100%;
-      height: 250px;
-      padding: 25px;
-      border: 1px solid #e5e6e9;
-      font-size: 13px;
-    }
-
-    .message-row {
-      display: flex;
-      gap: 20px;
-      height: 50px;
-      margin-top: 20px;
-
-      .name,
-      .email,
-      .subject {
+      .message {
         width: 100%;
-        height: 100%;
+        height: 250px;
+        padding: 25px;
         border: 1px solid #e5e6e9;
-        padding: 0px 20px 0px 20px;
         font-size: 13px;
       }
 
-      .send-button {
-        width: 150px;
+      .message-row {
+        display: flex;
+        gap: 20px;
         height: 50px;
-        border: 1px solid $primaryColor;
-        color: $primaryColor;
-        background-color: transparent;
-        font-size: 15px;
+        margin-top: 20px;
 
-        &:hover {
-          background-color: $secondColor;
-          color: $white;
+        .name,
+        .email,
+        .subject {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #e5e6e9;
+          padding: 0px 20px 0px 20px;
+          font-size: 13px;
+        }
+
+        .send-button {
+          width: 150px;
+          height: 50px;
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          background-color: transparent;
+          font-size: 15px;
+
+          &:hover {
+            background-color: $secondColor;
+            color: $white;
+          }
         }
       }
     }
@@ -73,28 +72,27 @@
 
   .info-group {
     width: 100%;
-    padding: 30px;
-
-    @media (max-width: 1000px) {
-      padding: 30px 0px 0px 0px;
-    }
-
+    
     .info-row {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       color: #b9bbbe;
       margin-bottom: 30px;
 
       .info-icon {
+        width: 50px;
         font-size: 50px;
       }
 
       .info-content {
         display: block;
         padding: 10px;
+        width: calc(100% - 50px);
 
         .info-txt {
           width: 100%;
+          word-break: break-word;
         }
       }
     }

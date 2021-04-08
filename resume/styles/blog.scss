@@ -1,22 +1,27 @@
 @import "./common.scss";
 
 .banner-container {
+  justify-content: center;
   background-image: url("../images/hero2.webp");
 }
 
 .main-container {
   .container-wrapper {
+    display: flex;
+    justify-content: center;
+    
     .box-container {
+      max-width: 100%;
       display: block;
 
       .box-wrapper {
-        gap: 20px;
+        gap: 40px;
       }
     }
   }
 
   .box-col-7 {
-    width: calc(70% - 20px);
+    width: calc(70% - 40px);
 
     @media (max-width: 1000px) {
       width: 100%;
@@ -209,6 +214,9 @@
                   font-size: 14px;
                   padding-top: 5px;
                   padding-left: 20px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
                 }
               }
             }
