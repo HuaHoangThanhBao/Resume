@@ -12,7 +12,7 @@
 <body>
     <!--Header Menu-->
     <header class="header container-fluid">
-        <nav class="nav">
+        <nav id="nav" class="nav">
             <ul class="nav__list">
                 <li class="nav__item logo">
                     <img class="img" src="./images/logo.webp">
@@ -25,17 +25,27 @@
                     <button class="talk-button">Let's talk</button>
                 </li>
                 <li class="nav__item toggle-button">
-                    <span class="toggle-line"></span>
-                    <span class="toggle-line"></span>
-                    <span class="toggle-line"></span>
+                    <a id="toggle-button">
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                    </a>
                 </li>
             </ul>
+            <div id="sticky-nav" class="sticky-nav">
+                <ul class="sticky-nav__list">
+                    <li class="sticky-nav__item"><a class="sticky-link inactive">Home</a></li>
+                    <li class="sticky-nav__item"><a class="sticky-link" href="./work.html">Work</a></li>
+                    <li class="sticky-nav__item"><a class="sticky-link" href="./blog.html">Blog</a></li>
+                    <li class="sticky-nav__item"><a class="sticky-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!--End Header Menu-->
 
     <!--Main Container-->
-    <main>
+    <main id="main">
         <div class="container-fluid">
             <div class="banner-container">
                 <div class="banner-wrapper">
@@ -487,6 +497,17 @@
         </div>
     </footer>
     <!--End Footer-->
+
+
+    <!--Backtop button-->
+    <div id="back-top-button" class="back-top">
+        <a>
+            <i class="back-top-icon fa fa-level-up"></i>
+        </a>
+    </div>
+    <!--End Backtop button-->
+
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
