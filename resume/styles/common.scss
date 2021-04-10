@@ -21,6 +21,7 @@ body {
 .banner-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 150px 80px 150px 80px;
   background-image: url("../images/banner-bg.webp");
   background-position: center center;
@@ -181,18 +182,18 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: $secondColor;
   z-index: 999;
-  padding: 10px;
+  background-color: $secondColor;
   box-shadow: 0 10px 20px #00000027, 0 3px 6px #00000038;
 }
 
 .sticky-nav {
   display: none;
   height: 0px;
+  width: 100%;
   overflow: hidden;
   padding: 0px 20px 0px 20px;
-  width: 100%;
+  
   @media (max-width: 768px) {
     display: block;
   }
@@ -236,6 +237,7 @@ body {
 
   .nav {
     display: block;
+    transition: .25s all ease;
 
     .nav__list {
       display: flex;

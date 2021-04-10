@@ -181,6 +181,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 150px 80px 150px 80px;
   background-image: url("../images/banner-bg.webp");
   background-position: center center;
@@ -354,9 +357,8 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #ff8553;
   z-index: 999;
-  padding: 10px;
+  background-color: #ff8553;
   -webkit-box-shadow: 0 10px 20px #00000027, 0 3px 6px #00000038;
           box-shadow: 0 10px 20px #00000027, 0 3px 6px #00000038;
 }
@@ -364,9 +366,9 @@ body {
 .sticky-nav {
   display: none;
   height: 0px;
+  width: 100%;
   overflow: hidden;
   padding: 0px 20px 0px 20px;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -414,6 +416,8 @@ body {
 
 .header .nav {
   display: block;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
 }
 
 .header .nav .nav__list {
