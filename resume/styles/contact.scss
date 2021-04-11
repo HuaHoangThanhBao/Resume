@@ -6,19 +6,9 @@
 }
 
 .main-container {
-  .container-wrapper {
-    display: flex;
-    justify-content: center;
 
-    .box-container {
-      max-width: 100%;
-      display: block;
-      padding-bottom: 40px;
-
-      .box-wrapper {
-        gap: 40px;
-      }
-    }
+  .message-container{
+    padding-top: 40px;
   }
 
   .info-group {

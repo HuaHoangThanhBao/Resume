@@ -1,4 +1,5 @@
 @import "./abstract/component.scss";
+@import "./abstract/animated.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *,
@@ -110,6 +111,7 @@ body {
     .box-cover {
       max-width: 1500px;
       height: 100%;
+      width: 100%;
     }
 
     .box-wrapper {
@@ -173,7 +175,6 @@ body {
 }
 /*End Main container*/
 
-
 /*Sticky Section*/
 .sticky {
   position: fixed;
@@ -193,7 +194,7 @@ body {
   width: 100%;
   overflow: hidden;
   padding: 0px 20px 0px 20px;
-  
+
   @media (max-width: 768px) {
     display: block;
   }
@@ -211,12 +212,12 @@ body {
     .sticky-nav__item {
       transition: color 0.4s;
 
-      .sticky-link{
+      .sticky-link {
         padding: 20px;
         display: block;
         cursor: pointer;
 
-        &.inactive{
+        &.inactive {
           cursor: auto;
         }
       }
@@ -229,7 +230,6 @@ body {
 }
 /*End Sticky Section*/
 
-
 /*Header*/
 .header {
   display: block;
@@ -237,7 +237,7 @@ body {
 
   .nav {
     display: block;
-    transition: .25s all ease;
+    transition: 0.25s all ease;
 
     .nav__list {
       display: flex;
@@ -263,7 +263,7 @@ body {
         font-size: 15px;
         position: relative;
 
-        &.nav-effect::after{
+        &.nav-effect::after {
           bottom: 0;
           content: "";
           display: block;
@@ -272,12 +272,12 @@ body {
           bottom: -15px;
           position: absolute;
           background: #fff;
-          transition: all .4s ease;
+          transition: all 0.4s ease;
           width: 0;
         }
 
-        &:hover{
-          &.nav-effect::after{
+        &:hover {
+          &.nav-effect::after {
             width: 100%;
             left: 0;
           }
@@ -331,100 +331,91 @@ footer {
   margin-top: 50px;
   background-color: #000000;
 
-  .footer-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 80px 0px 0px 0px;
+  .main-container{
+    background-color: inherit;
+  }
 
-    @media (max-width: 1200px) {
-      padding: 80px 20px 0px 20px;
+  .footer-top {
+    display: block;
+
+    .footer-logo {
+      height: 50px;
+      width: 150px;
     }
 
-    .footer-top {
-      display: block;
+    .footer-content {
+      color: $white;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
 
-      .footer-logo {
-        height: 50px;
-        width: 150px;
-      }
-
-      .footer-content {
-        color: $white;
-        padding-top: 20px;
+      .box-col-5 {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        gap: 20px;
 
-        .box-col-5 {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+
+        &:last-child {
+          justify-content: flex-end;
 
           @media (max-width: 768px) {
-            width: 100%;
+            justify-content: flex-start;
+            padding-top: 40px;
           }
 
-          &:last-child {
-            justify-content: flex-end;
-
-            @media (max-width: 768px) {
-              justify-content: flex-start;
-              padding-top: 40px;
-            }
-
-            .call-button,
-            .contact-button {
-              border-radius: 30px;
-              padding: 10px 40px;
-              border: 1px solid $white;
-              color: $white;
-              background: transparent;
-              font-size: 17px;
-              margin: 20px 0px 0px 0px;
-            }
-
-            .contact-button {
-              background-color: #ff8553;
-              border: 1px solid #ff8553;
-            }
+          .call-button,
+          .contact-button {
+            border-radius: 30px;
+            padding: 10px 40px;
+            border: 1px solid $white;
+            color: $white;
+            background: transparent;
+            font-size: 17px;
+            margin: 20px 0px 0px 0px;
           }
-        }
-      }
 
-      .footer-social-group {
-        display: block;
-        padding-top: 40px;
-
-        .social-icon {
-          height: 40px;
-          width: 40px;
-          font-size: 16px;
-          display: inline-block;
-          text-align: center;
-          line-height: 40px;
-          background-color: #26140c;
-          color: #ff8553;
-          border-radius: 5px;
-          margin-right: 8px;
+          .contact-button {
+            background-color: #ff8553;
+            border: 1px solid #ff8553;
+          }
         }
       }
     }
 
-    .footer-bottom {
-      color: $white;
-      font-size: 14px;
-      text-align: center;
-      padding: 100px 0px 20px 0px;
+    .footer-social-group {
+      display: block;
+      padding-top: 40px;
+
+      .social-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        background-color: #26140c;
+        color: #ff8553;
+        border-radius: 5px;
+        margin-right: 8px;
+      }
     }
+  }
+
+  .footer-bottom {
+    color: $white;
+    font-size: 14px;
+    text-align: center;
+    padding: 100px 0px 20px 0px;
   }
 }
 /*End Footer*/
 
-
 /*Backtop button*/
-.back-top{
+.back-top {
   position: fixed;
   height: 50px;
   width: 50px;
@@ -439,11 +430,11 @@ footer {
   opacity: 0;
   transition: opacity 1s;
 
-  &.animated{
+  &.animated {
     opacity: 1;
   }
 
-  .back-top-icon{
+  .back-top-icon {
     font-size: 25px;
     padding: 13px;
   }
